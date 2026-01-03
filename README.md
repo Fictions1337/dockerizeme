@@ -67,3 +67,30 @@ Each component needs to have its own `Dockerfile` created. A `compose.yaml` shou
 - Frontned - port 80
 - Backend - port 8000
 - Helper service - port 9000
+
+# Hints
+
+<details>
+<summary>Foundation</summary>
+We need to think about our base image from which we want to start. Our applications have 2 distinct base images that we can use. One for the frontend and the other for both the backend and the helper service. Make note of the technologies mentioned.
+
+- [NGINX](https://hub.docker.com/_/nginx)
+- [Python](https://hub.docker.com/_/python)
+</details>
+
+<details>
+<summary>The steps we take...</summary>
+When we think about a Dockerfile, we think about the layers we want to add on top of our foundation, slowly building out the environment needed for our application to run. We put down the steps we take to get to that point by installing what is missing, moving the files where they need to be, exposing the ports and lastly defining our entrypoint.
+</details>
+
+<details>
+<summary>Leading the orchestra</summary>
+A good dirigent knows how to lead its orchestra. Likewise, we need to describe to our dirigent (docker compose) how to orchestrate our apps and services in order for the whole system to run properly. We need to declare our services, where they are located, how they are built, and how will they listen for incoming information.
+
+```yaml
+services:
+    frontend:
+        build: ./frontend/.
+        network_mode: host
+```
+</details>
