@@ -62,7 +62,7 @@ fastapi run main.py --port 9000
 
 # Challenge
 
-Each component needs to have its own `Dockerfile` created. A `compose.yaml` should also be created in the root of the repository to orchestrate the service. Every application should run on separate ports.
+Each component needs to have its own `Dockerfile` created. A `compose.yaml` should also be created in the root of the repository to orchestrate the services. Every application should run on separate ports.
 
 - Frontned - port 80
 - Backend - port 8000
