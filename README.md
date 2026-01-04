@@ -15,7 +15,7 @@ REST API written in `Python` using `FastAPI` library with 1 GET endpoint `/messa
 
 ### Quick start
 
-Before running the commands mentioned below, make sure to craete a **Python virtual environment** in the backend folder, for local development and testing.
+Before running the commands mentioned below, make sure to create a **Python virtual environment** in the backend folder, for local development and testing.
 
 ```sh
 cd backend
@@ -43,7 +43,7 @@ REST API written in `Python` using `FastAPI` library with 1 GET endpoint `/helpe
 
 ### Quick start
 
-Before running the commands mentioned below, make sure to craete a **Python virtual environment** in the helper-service folder, for local development and testing.
+Before running the commands mentioned below, make sure to create a **Python virtual environment** in the helper-service folder, for local development and testing.
 
 ```sh
 cd helper-service
